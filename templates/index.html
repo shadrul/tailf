@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+	<script src= "https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.4.1/socket.io.js"></script>
+	<script src="/static/app.js"></script>
+</head>
+<body>
+
+{% for row in data %}
+<p > {{data[row]}} </p>
+<p > {{row}} </p>
+
+{% endfor %}
+
+<div id = "mydiv1">  </div>
+<!-- script type="text/javascript">
+
+	var socket = io.connect('http://' + document.domain + ':' + location.port + '/inter');
+	console.log("hello");
+  	socket.on('response', function (data) {
+  		console.log("hi")
+    	console.log(data);
+    // socket.esmit('my other event', { my: 'data' });
+  });
+	
+
+</script> -->
+</body>
+</html>
